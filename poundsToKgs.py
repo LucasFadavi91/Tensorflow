@@ -23,7 +23,7 @@ plt.plot(record.history["loss"])
 
 print("Prediction!")
 result = model.predict([198.416]) #number in pounds
-print("Result: " + str(result) + "Kgs")
+print("Result:" + str(result) + "Kgs")
 
 print("Internal variables of model")
 print(layer.get_weights())
