@@ -15,15 +15,15 @@ model.compile(
 
 print("Training...")
 record = model.fit(pounds, kgs, epochs=100, verbose=False)
-print("successful")
+print("Successful")
 
-plt.xlabel("# epoch")
-plt.ylabel("magnitude of loss")
+plt.xlabel("# Epoch")
+plt.ylabel("Magnitude of loss")
 plt.plot(record.history["loss"])
 
-print("prediction!")
-result = model.predict([198.416])
-print("Result" + str(result) + "Kgs")
+print("Prediction!")
+result = model.predict([198.416]) #number in pounds
+print("Result: " + str(result) + "Kgs")
 
-print("internal variables of model")
+print("Internal variables of model")
 print(layer.get_weights())
