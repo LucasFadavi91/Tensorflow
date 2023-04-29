@@ -18,12 +18,12 @@ record = model.fit(pounds, kgs, epochs=100, verbose=False)
 print("Successful")
 
 plt.xlabel("# Epoch")
-plt.ylabel("Magnitude of loss")
+plt.ylabel("Loss magnitude")
 plt.plot(record.history["loss"])
 
 print("Prediction!")
 result = model.predict([198.416]) #number in pounds
 print("Result:" + str(result) + "Kgs")
 
-print("Internal variables of model")
+print("Model internal variables")
 print(layer.get_weights())
